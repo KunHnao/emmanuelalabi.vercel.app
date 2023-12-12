@@ -18,7 +18,7 @@
 <body>
     <div class="w-full h-full min-h-screen bg-white">
         <header
-            class="fixed backdrop-blur-lg w-full px-24 py-4 flex flex-row items-center justify-between border-b border-[var(--gray)]"
+            class="fixed backdrop-blur-lg w-full px-4 md:px-24 py-4 flex flex-row items-center justify-between border-b border-[var(--gray)]"
             style="z-index: 9999;">
             <div class="w-fit flex items-center">
                 <div class="flex items-center">
@@ -31,10 +31,10 @@
                     </div>
                 </div>
                 <nav class="hidden md:flex items-center mx-8 text-[var(--gray)]">
-                    <a href="#" class="text-sm px-2 hover:text-white">Home</a>
-                    <a href="#" class="text-sm px-2 hover:text-white">About</a>
-                    <a href="#" class="text-sm px-2 hover:text-white">Projects</a>
-                    <a href="#" class="text-sm px-2 hover:text-white">Blog</a>
+                    <a href="#" class="text-sm px-2 hover:text-black">Home</a>
+                    <a href="#about" class="text-sm px-2 hover:text-black">About</a>
+                    <a href="#work" class="text-sm px-2 hover:text-black">Projects</a>
+                    <a href="#blog" class="text-sm px-2 hover:text-black">Blog</a>
 
                 </nav>
             </div>
@@ -42,29 +42,29 @@
                 <div>
                     <p class="text-[10px] px-2 pr-4 border-r border-[var(--gray)] text-right text-black"> +250 072 468 4275<br><span id="song">alabiemmanuel2937@gmail.com</span></p>
                 </div>
-                <a href="#">
-                    <i class="fa-brands fa-linkedin mx-2 ml-4 text-[var(--gray)] text-xl"></i>
+                <a href="https://linkedin.com/kun_hnao">
+                    <i class="fa-brands fa-linkedin mx-2 ml-4 text-[var(--gray)] text-xl hover:text-black"></i>
                 </a>
-                <a href="#">
-                    <i class="fa-brands fa-x-twitter mx-2 text-[var(--gray)] text-xl"></i>
+                <a href="https://twitter.com/kun_hnao">
+                    <i class="fa-brands fa-x-twitter mx-2 text-[var(--gray)] text-xl hover:text-black"></i>
                 </a>
-                <a href="#">
-                    <i class="fa-brands fa-instagram mx-2 text-[var(--gray)] text-xl"></i>
+                <a href="https://reddit.com/u/kun_hnao">
+                    <i class="fa-brands fa-reddit mx-2 text-[var(--gray)] text-xl hover:text-black"></i>
                 </a>
-                <a href="#">
-                    <i class="fa-brands fa-whatsapp mx-2 text-[var(--gray)] text-xl"></i>
+                <a href="https://wa.me/0724684275?text=">
+                    <i class="fa-brands fa-whatsapp mx-2 text-[var(--gray)] text-xl hover:text-black"></i>
                 </a>
-                <a href="#">
-                    <i class="fa-brands fa-github mx-2 mr-4 text-[var(--gray)] text-xl"></i>
+                <a href="https://github.com/kun_hnao">
+                    <i class="fa-brands fa-github mx-2 mr-4 text-[var(--gray)] text-xl hover:text-black"></i>
                 </a>
-                <a href="#">
+                <a href="assets/Resume.pdf">
                     <button
                         class="px-2 py-2 border border-[var(--gray)] text-black hover:text-white hover:bg-[var(--gray)] text-sm rounded-lg mr-1">
                         See resume
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </button>
                 </a>
-                <a href="#">
+                <a href="#contact">
                     <button
                         class="px-2 py-2 bg-black text-white  text-sm rounded-lg hover:bg-[var(--gray)">Contact
                         me</button>
@@ -72,10 +72,10 @@
             </div>
         </header>
         <section class="min-h-screen">
-            <div id="home" class="py-8 px-24 w-full h-screen flex flex-col items-start justify-center">
+            <div id="home" class="py-8 px-4 md:px-24 w-full h-screen flex flex-col items-start justify-center">
                 <p class="text-lg w-2/4 mb-5">Hello, I'm</p>
-                <h1 class="text-6xl font-bold mb-5">Emmanuel Alabi, <br>Software Developer.</h1>
-                <p class="text-lg w-2/4 mb-5">I'm a software developer and AI enthusiast, currently specializing in creating dynamic experiences for the web.</p>
+                <h1 class="text-4xl md:text-6xl font-bold mb-5">Emmanuel Alabi, <br>Software Developer.</h1>
+                <p class="text-lg md:w-2/4 mb-5">I'm a software developer and AI enthusiast, currently specializing in creating dynamic experiences for the web.</p>
                 <div>
                     <a href="#">
                         <button class="px-2 py-2 border border-[var(--gray)] text-black hover:text-white hover:bg-[var(--gray)] text-sm rounded-lg mr-1">
@@ -88,14 +88,15 @@
                         </button>
                     </a>
                 </div>
+                <p class="text-slate-100 text-sm mt-5">Ignore the empty space on the right --/></p>
             </div>
-            <div id="about" class="p-24 w-full flex justify-between">
-                <div class="w-2/4">
-                    <h1 class="text-4xl mb-5 font-bold">About Me.</h1>
+            <div id="about" class="p-4 py-8 md:p-24 w-full block md:flex justify-between">
+                <div class="md:w-2/4">
+                    <h1 class="text-2xl md:text-4xl mb-5 font-bold">About Me.</h1>
                     <p class="text-md mb-5">I'm Emmanuel, a full-stack developer specializing in the development of distinctive, responsive websites and functional web applications. My coding journey began in 2018, and I honed my skills through resources such as freeCodeCamp and Harvard.</p>
                     <p class="text-md mb-5">I am currently enrolled in a university program for Software Development, and when I'm not immersed in coding, you'll frequently discover me engaged in activities like gaming, cycling, or playing badminton.</p>
                     <p class="text-lg font-semibold mb-5">Some of the technologies I currently work with include:</p>
-                    <div class="flex flex-wrap">
+                    <div class="flex flex-wrap mb-5">
                         <button class="p-1 bg-slate-200 rounded-sm mb-1 mr-1">HTML</button>
                         <button class="p-1 bg-slate-200 rounded-sm mb-1 mr-1">CSS</button>
                         <button class="p-1 bg-slate-200 rounded-sm mb-1 mr-1">Javascript</button>
@@ -120,57 +121,58 @@
                         <button class="p-1 bg-slate-200 rounded-sm mb-1 mr-1">Render</button>
                     </div>
                 </div>
-                <div class="w-2/4 flex justify-end">
-                    <img src="https://avatars.githubusercontent.com/u/49512755?v=4" alt="profile" class="w-[200px] h-[200px]">
+                <div class="md:w-2/4 flex justify-end">
+                    <img src="https://avatars.githubusercontent.com/u/49512755?v=4" alt="profile" class="w-[] h-[auto] rounded-lg">
+
                 </div>
             </div>
-            <div id="work" class="p-24 w-full pr-0">
-                <h1 class="text-4xl mb-5 font-bold">What I've Worked On.</h1>
-                <p class="text-md w-2/4 mb-5">I've worked on a number of webdev projects, and here are a few of the ones I'm proud of. Since I'm a big fan of open source, several my personal projects are also availble on Github, Replit, and Codepen.</p>
-                <div class="w-full overflow-x-scroll whitespace-nowrap">
-                    <div class="w-[450px] inline-block mr-2 align-top whitespace-normal">
-                        <img src="assets/Screenshot 2023-11-23 152521.png" alt="screenshot" class="w-full rounded-sm mb-2 h-[220px]" style="object-fit: cover">
+            <div id="work" class="p-4 py-8 md:p-24 w-full pr-0">
+                <h1 class="text-2xl md:text-4xl mb-5 font-bold">What I've Worked On.</h1>
+                <p class="text-md md:w-2/4 mb-5">I've worked on a number of webdev projects, and here are a few of the ones I'm proud of. Since I'm a big fan of open source, several my personal projects are also availble on Github, Replit, and Codepen.</p>
+                <div class="w-full overflow-x-scroll whitespace-nowrap sm:py-4 p-0">
+                    <div class="w-[300px] md:w-[450px] inline-block mr-2 align-top whitespace-normal">
+                        <img src="assets/Screenshot 2023-11-23 152521.png" alt="screenshot" class="w-full rounded-lg mb-2 h-[150px] md:h-[220px]" style="object-fit: cover">
                         <p class="text-xl font-bold mb-2">Watch Nation</p>
                         <p class="text-slate-500 text-md mb-2">WIP - Flask, Javascript</p>
                         <p class="text-md">A movie and TV show search and recommendation web app, powered by TMDB and JustWatch APIs to stay up to date on the latest.</p>
                     </div>
-                    <div class="w-[450px] inline-block mr-2 align-top whitespace-normal">
-                        <img src="assets/Screenshot 2023-12-11 122337.png" alt="screenshot" class="w-full rounded-sm mb-2 h-[220px]" style="object-fit: cover">
+                    <div class="w-[300px] md:w-[450px] inline-block mr-2 align-top whitespace-normal">
+                        <img src="assets/Screenshot 2023-12-11 122337.png" alt="screenshot" class="w-full rounded-lg mb-2 h-[150px] md:h-[220px]" style="object-fit: cover">
                         <p class="text-xl font-bold mb-2">Ant</p>
                         <p class="text-slate-500 text-md mb-2">WIP - Flask, Javascript</p>
                         <p class="text-md">Like a LinkTree alternative, Ant is a link-in-bio page creator connected to a number of Oauth applications for a fun, feature-rich experience.</p>
                     </div>
-                    <div class="w-[450px] inline-block mr-2 align-top whitespace-normal">
-                        <img src="assets/Screenshot 2023-12-11 154932.png" alt="screenshot" class="w-full rounded-sm mb-2 h-[220px] border border-slate-500" style="object-fit: cover">
+                    <div class="w-[300px] md:w-[450px] inline-block mr-2 align-top whitespace-normal">
+                        <img src="assets/Screenshot 2023-12-11 154932.png" alt="screenshot" class="w-full rounded-lg mb-2 h-[150px] md:h-[220px] border border-slate-500" style="object-fit: cover">
                         <p class="text-xl font-bold mb-2">emmanuellamaebaphotography.co.uk</p>
                         <p class="text-slate-500 text-md mb-2">HTML, CSS, JS, PHP</p>
                         <p class="text-md">The Official site of Emmanuella Maeba, a portrait and stills photographer based in the UK.</p>
                     </div>
-                    <div class="w-[450px] inline-block mr-2 align-top whitespace-normal">
-                        <img src="assets/Screenshot 2023-12-11 154333.png" alt="screenshot" class="w-full rounded-sm mb-2 h-[220px] border border-slate-500" style="object-fit: cover">
+                    <div class="w-[300px] md:w-[450px] inline-block mr-2 align-top whitespace-normal">
+                        <img src="assets/Screenshot 2023-12-11 154333.png" alt="screenshot" class="w-full rounded-lg mb-2 h-[150px] md:h-[220px] border border-slate-500" style="object-fit: cover">
                         <p class="text-xl font-bold mb-2">cdl-rw.com</p>
                         <p class="text-slate-500 text-md mb-2">NextJS, TailwindCSS</p>
                         <p class="text-md">The Official site of Comet Digital Ltd. Rwanda, a digital advertising and web development agency.</p>
                     </div>
-                    <div class="w-[450px] inline-block mr-2 align-top whitespace-normal">
-                        <img src="https://emmanuelalabidev.netlify.app/assets/images/Screenshot%202023-10-18%20155051.png" alt="screenshot" class="w-full rounded-sm mb-2 h-[220px] border border-slate-500" style="object-fit: cover">
+                    <div class="w-[300px] md:w-[450px] inline-block mr-2 align-top whitespace-normal">
+                        <img src="https://emmanuelalabidev.netlify.app/assets/images/Screenshot%202023-10-18%20155051.png" alt="screenshot" class="w-full rounded-lg mb-2 h-[150px] md:h-[220px] border border-slate-500" style="object-fit: cover">
                         <p class="text-xl font-bold mb-2">ShopKigali</p>
                         <p class="text-slate-500 text-md mb-2">Django</p>
                         <p class="text-md">A Project by Comet Digital RW Ltd., ShopKigali aimed to provide a clear and consise directory of all the shopping locations in Kigali</p>
                     </div>
-                     <div class="w-[450px] inline-block mr-2 align-top whitespace-normal">
-                        <img src="https://emmanuelalabidev.netlify.app/assets/images/Screenshot%202023-10-18%20160129.png" alt="screenshot" class="w-full rounded-sm mb-2 h-[220px] border border-slate-500" style="object-fit: cover">
+                     <div class="w-[300px] md:w-[450px] inline-block mr-2 align-top whitespace-normal">
+                        <img src="https://emmanuelalabidev.netlify.app/assets/images/Screenshot%202023-10-18%20160129.png" alt="screenshot" class="w-full rounded-sm mb-2 h-[150px] md:h-[220px] border border-slate-500" style="object-fit: cover">
                         <p class="text-xl font-bold mb-2">Dojo</p>
                         <p class="text-slate-500 text-md mb-2">Django</p>
                         <p class="text-md">Dojo is an experimental cyptocurrency trading simulator pwered by the CoingeckoAPI, simulating real-life currency rates. Course submission.</p>
                     </div>
                 </div>
             </div>
-            <div id="blog" class="p-24 w-full bg-[#FFFB00]">
-                <h1 class="text-4xl mb-5 font-black text-[#0078FF]">Recent Blog Posts.</h1>
-                <p class="text-md w-2/4 mb-5">In my free time, I often write casual articles about the tips, tricks, humor, and swag of software development on my blog over at kun_hnao.vercel.app - the perfect place to go if you need a break from that terrifyingly hard project.</p>
-                <div class="grid grid-cols-4 grid-rows-4 gap-4 h-[500px]">
-                    <div class="col-span-2 row-span-4 rounded-lg bg-cover bg-center bg-[url('https://digibarn.com/collections/systems/xerox820/CIMG3207.JPG')]">
+            <div id="blog" class="p-4 py-8 md:p-24 w-full bg-[#FFFB00] h-fit">
+                <h1 class="text-2xl md:text-4xl mb-5 font-black text-[#0078FF]">Recent Blog Posts.</h1>
+                <p class="text-md md:w-2/4 mb-5">In my free time, I often write casual articles about the tips, tricks, humor, and swag of software development on my blog over at kun_hnao.vercel.app - the perfect place to go if you need a break from that terrifyingly hard project.</p>
+                <div class="block md:grid grid-cols-4 grid-rows-4 gap-4 md:h-[500px]">
+                    <div class="md:col-span-2 md:row-span-4 mb-4 md:mb-0 rounded-lg bg-cover bg-center bg-[url('https://digibarn.com/collections/systems/xerox820/CIMG3207.JPG')]">
                         <div class="w-full h-full bg-cyan-500 bg-opacity-[.8] rounded-lg p-8 flex flex-col justify-end">
                             <p class="text-[8px] font-italic">Image curtesy of digibarn.com</p>
                             <h1 class="text-3xl text-white font-black">2GB RAM, 16GB Disk Space: How to build full stack in spite of your sluggish computer.</h1>
@@ -178,55 +180,55 @@
                             <p class="text-sm text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas eveniet architecto numquam quos ad? Similique possimus odit quibusdam temporibus hic magnam laborum porro illum, assumenda, praesentium, enim fugiat? Distinctio.</p>
                         </div>
                     </div>
-                    <div class="row-span-2 col-start-3 bg-white rounded-lg  bg-cover bg-center bg-[url('https://images.inc.com/uploaded_files/image/1920x1080/getty_503426092_342208.jpg')]">
+                    <div class="mb-4 md:mb-0 md:row-span-2 md:col-start-3 bg-white rounded-lg  bg-cover bg-center bg-[url('https://images.inc.com/uploaded_files/image/1920x1080/getty_503426092_342208.jpg')]">
                         <div class="w-full h-full bg-cyan-500 bg-opacity-[.8] rounded-lg p-4 flex flex-col justify-end">
                             <p class="text-[8px] font-italic">Image curtesy of digibarn.com</p>
                             <h1 class="text-xl text-white font-black">Ten websites that make lazy front-end developers happy.</h1>
                             <p class="text-sm text-white font-bold">By @Kun_Hnao</p>
                         </div>
                     </div>
-                    <div class="row-span-2 col-start-4 bg-white rounded-lg  bg-cover bg-center bg-[url('https://cdn3.careeraddict.com/uploads/article/59412/medium-illustration-people-talking.jpg')]">
+                    <div class="mb-4 md:mb-0 md:row-span-2 md:col-start-4 bg-white rounded-lg  bg-cover bg-center bg-[url('https://cdn3.careeraddict.com/uploads/article/59412/medium-illustration-people-talking.jpg')]">
                         <div class="w-full h-full bg-cyan-500 bg-opacity-[.8] rounded-lg p-4 flex flex-col justify-end">
                             <p class="text-[8px] font-italic">Image curtesy of digibarn.com</p>
                             <h1 class="text-xl text-white font-black">The Developer's Guide to Communicating with Non-Techies: A Translation Manual</h1>
                             <p class="text-sm text-white font-bold">By @Kun_Hnao</p>
                         </div>
                     </div>
-                    <div class="row-span-2 col-start-3 row-start-3 bg-white rounded-lg  bg-cover bg-center bg-[url('https://digibarn.com/collections/systems/xerox820/CIMG3207.JPG')]">
+                    <div class="mb-4 md:mb-0 md:row-span-2 md:col-start-3 md:row-start-3 bg-white rounded-lg  bg-cover bg-center bg-[url('https://digibarn.com/collections/systems/xerox820/CIMG3207.JPG')]">
                         <div class="w-full h-full bg-cyan-500 bg-opacity-[.8] rounded-lg p-4 flex flex-col justify-end">
                             <p class="text-[8px] font-italic">Image curtesy of digibarn.com</p>
-                            <h1 class="text-xl text-white font-black">How not to CTRL+A then DEL while trying to build with code.</h1>
+                            <h1 class="text-xl text-white font-black">404: The Art of Not Found Pages – A Developer's Guide to Humor in HTTP</h1>
                             <p class="text-sm text-white font-bold">By @Kun_Hnao</p>
                         </div>
                     </div>
-                    <div class="row-span-2 col-start-4 row-start-3 bg-white rounded-lg  bg-cover bg-center bg-[url('https://digibarn.com/collections/systems/xerox820/CIMG3207.JPG')]">
+                    <div class="mb-4 md:mb-0 md:row-span-2 md:col-start-4 md:row-start-3 bg-white rounded-lg  bg-cover bg-center bg-[url('https://digibarn.com/collections/systems/xerox820/CIMG3207.JPG')]">
                         <div class="w-full h-full bg-cyan-500 bg-opacity-[.8] rounded-lg p-4 flex flex-col justify-end">
                             <p class="text-[8px] font-italic">Image curtesy of digibarn.com</p>
-                            <h1 class="text-xl text-white font-black">404: How to Find Love (and Bug Fixes) in the World of Programming</h1>
+                            <h1 class="text-xl text-white font-black">How to Find Love (and Bug Fixes) in the World of Programming</h1>
                             <p class="text-sm text-white font-bold">By @Kun_Hnao</p>
                         </div>
                     </div>
                 </div>
                 
             </div>
-            <div id="work" class="p-24 w-full pr-0 ">
-                <div class="w-3/4">
-                    <h1 class="text-4xl mb-5 font-bold">Let's Work Together.</h1>
-                    <p class="text-md w-2/4 mb-5">I'm always available for collaborations and small jobs, as it gives me an opportunity to learn and grow. Feel free to contact me on any of my listed socials or in the contact form below, and I'll do my best to get back to you asap.</p>
+            <div id="contact" class="p-4 py-8 md:p-24 w-full ">
+                <div class="md:w-3/4">
+                    <h1 class="text-2xl md:text-4xl mb-5 font-bold">Let's Work Together.</h1>
+                    <p class="text-md md:w-2/4 mb-5">I'm always available for collaborations and small jobs, as it gives me an opportunity to learn and grow. Feel free to contact me on any of my listed socials or in the contact form below, and I'll do my best to get back to you asap.</p>
                     <form action="" class="mt-5">
-                        <input type="text" name="name" id="name" class="p-2 rounded-md border border-black w-[705px] mb-2" placeholder="Your Name"><br>
-                        <input type="email" name="email" id="email" class="p-2 rounded-md border border-black w-[350px] mb-2" placeholder="Email Address">
-                        <input type="tel" name="phone" id="phone" class="p-2 rounded-md border border-black w-[350px] mb-2" placeholder="Phone Number"><br>
-                        <textarea name="message" id="" cols="30" rows="10" class="w-[705px] h-[250px] border border-black p-2 rounded-md" placeholder="Your message here..."></textarea><br>
+                        <input type="text" name="name" id="name" class="p-2 rounded-md border border-black w-full md:w-[705px] mb-2" placeholder="Your Name"><br>
+                        <input type="email" name="email" id="email" class="p-2 rounded-md border border-black w-full md:w-[350px] mb-2" placeholder="Email Address">
+                        <input type="tel" name="phone" id="phone" class="p-2 rounded-md border border-black w-full md:w-[350px] mb-2" placeholder="Phone Number"><br>
+                        <textarea name="message" id="" cols="30" rows="10" class="w-full md:w-[705px] h-[250px] border border-black p-2 rounded-md" placeholder="Your message here..."></textarea><br>
                         <input type="submit" class="p-2 rounded-md border border-black mt-2 bg-black text-white" value="Send Message"><br>
 
                     </form>
                 </div>                
             </div>
         </section>
-        <footer class="px-24 py-8 border-t border-[var(--gray)]">
-            <div class="flex justify-between items-end W-full">
-                <div class="w-2/4">
+        <footer class="p-8 md:px-24 py-8 border-t border-[var(--gray)]">
+            <div class="block md:flex justify-between items-end W-full">
+                <div class="md:w-2/4">
                     <div class="flex items-center">
                         <div
                             class="w-8 h-8 bg-cover bg-center bg-[url('/assets/2.svg')]">
@@ -242,13 +244,13 @@
                         collaborations and small gigs.
                     </p>
                 </div>
-                <div class="text-right">
+                <div class="md:text-right mt-5">
                     <i class="fa-solid fa-fish text-lg"></i>
                     <p class="text-sm">&copy;2023 Emmanuel Alabi. All Rights Reserved.</p>
-                    <nav class="flex text-slate-500 mt-1">
-                        <p class="text-sm mx-2">alabiemmanuel2937@gmail.com</p>
-                        <p class="text-sm mx-2">+250 724 684 275</p>
-                        <p class="text-sm ml-2">Kigali, Rwanda</p>
+                    <nav class="md:flex text-slate-500 mt-1">
+                        <p class="text-sm md:mx-2">alabiemmanuel2937@gmail.com</p>
+                        <p class="text-sm md:mx-2">+250 724 684 275</p>
+                        <p class="text-sm md:ml-2">Kigali, Rwanda</p>
                     </nav>
                 </div>
             </div>
